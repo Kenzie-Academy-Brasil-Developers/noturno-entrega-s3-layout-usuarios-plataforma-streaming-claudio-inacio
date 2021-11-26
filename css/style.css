@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: KenzieFlix
 Author: Kenzie Academy
@@ -14,18 +15,34 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+
 /* VARIÁVEIS */
 :root{
-  
+  --fonte1: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --corFundo: #00002e;
 }
 
 /*BODY*/
 	body{
-
+		background-color: var(--corFundo);
 	}
 
 /*TOPO*/
 	header.topo{
+		
+	}
+	
+	.topo figure img{
+		width: 250px;
+		
 		
 	}
 
@@ -34,5 +51,81 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		display: flex;
+		justify-content: center;
 		
+		margin-top: 100px;	
 	}
+	div.pg-home section {
+		
+		text-align: center;
+	}
+	div.pg-home section h2{
+		color: white;
+		font-size: 80px;
+		font-family: 'Helvetica Neue';
+	}
+	div.pg-home > section > ul{
+		display: flex;
+		margin-top: 50px;
+		width: 858px;
+		justify-content: center;
+	}
+	div.pg-home > section > ul > li{
+		padding: 0px 18px;
+	}
+	div.pg-home > section > ul > li > figure > img{
+		width: 186px;
+		margin-bottom: 20px;
+	}
+
+	div.pg-home > section > ul > li > figure > img:hover{
+		border: 2px solid white;
+		cursor: pointer;
+	}
+
+	div.pg-home > section > ul > li > figure > figcaption{
+		color: white;
+	}
+	footer > button {
+		margin-top: 50px;
+		background-color: var(--corFundo);
+		color: white;
+		padding: 15px 35px;
+		border: 1px solid white;
+		cursor: pointer;
+	}
+
+	@media (max-width: 870px ){
+
+		.topo figure{
+		display: flex;
+		justify-content: center;
+		}
+
+		div.pg-home section h2{
+			color: white;
+			font-size: 40px;
+			font-family: 'Helvetica Neue';
+		}
+
+		div.pg-home{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			margin-top: 40px;	
+			margin: auto;
+		}
+		div.pg-home > section > ul{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 50px;
+			width: 600px;
+			justify-content: center;
+			
+		}
+	}
+
+
+	
