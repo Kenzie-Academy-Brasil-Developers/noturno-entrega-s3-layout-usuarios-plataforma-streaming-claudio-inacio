@@ -42,8 +42,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	
 	.topo figure img{
 		width: 250px;
-		
-		
+
 	}
 
 /*RODAPÉ*/
@@ -110,7 +109,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		}
 
 		div.pg-home{
-			display: flex;
+			
 			justify-content: center;
 			align-items: center;
 			color: white;
@@ -118,7 +117,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			margin: auto;
 		}
 		div.pg-home > section > ul{
-			display: flex;
+			
 			flex-wrap: wrap;
 			margin-top: 50px;
 			width: 600px;
