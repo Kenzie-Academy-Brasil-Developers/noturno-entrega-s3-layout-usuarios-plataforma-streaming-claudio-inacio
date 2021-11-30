@@ -61,6 +61,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 	div.pg-home section h2{
 		color: white;
+		width: 100%;
 		font-size: 80px;
 		font-family: 'Helvetica Neue';
 	}
@@ -96,15 +97,15 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	@media (max-width: 870px ){
-
 		.topo figure{
 		display: flex;
 		justify-content: center;
 		}
-
+		
 		div.pg-home section h2{
 			color: white;
 			font-size: 40px;
+			
 			font-family: 'Helvetica Neue';
 		}
 
@@ -121,9 +122,14 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 			flex-wrap: wrap;
 			margin-top: 50px;
 			width: 600px;
+			max-width: 100%;
 			justify-content: center;
 			
 		}
+		div.pg-home > section{
+			max-width: 100%;
+		}
+
 	}
 
 
